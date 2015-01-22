@@ -7,7 +7,7 @@ summary: Git study memo
 image: /images/blog/git.png
 ---
 
-h1. コミットが失敗して、やり直すか考えてた時、迷ったときのメモ
+コミットが失敗して、やり直すか考えてた時、迷ったときのメモ
 
 Source: http://d.hatena.ne.jp/mrgoofy33/20100910/1284069468
 
@@ -15,8 +15,6 @@ Source: http://d.hatena.ne.jp/mrgoofy33/20100910/1284069468
 ** コミット自体を取り消したい場合
 *** コミット自体を取り消しする(なかった事にする)には、「git reset」を使います。
 
-```
-「git reset」には「git reset –soft」と「git reset –hard」の2種類があります。
-「git reset –soft」 → ワークディレクトリの内容はそのままでコミットだけを取り消す。
-「git reset –hard」 → コミット取り消した上でワークディレクトリの内容も書き換える。
-```
+* 「git reset」には「git reset –soft」と「git reset –hard」の2種類があります。
+** 「git reset –soft」 → ワークディレクトリの内容はそのままでコミットだけを取り消す。
+** 「git reset –hard」 → コミット取り消した上でワークディレクトリの内容も書き換える。
