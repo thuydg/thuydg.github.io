@@ -4,7 +4,7 @@ title: Git study 1
 category: blog
 tags: [git]  
 summary: Git study memo
-image: /images/blog/blogging-again.png
+image: /images/blog/git.png
 ---
 
 h1. コミットが失敗して、やり直すか考えてた時、迷ったときのメモ
