@@ -1,9 +1,9 @@
 permalink: /:categories/:title.html
-url: ""
+url: "http://thuydg.github.io/"
 full_name: "ThuyDg"
 first_name: "Duong"
 last_name: "Thuy"
-blog_title: "Keep on smiling!"
+blog_title: "Sunshine blog"
 author_img_name_path: "https://scontent-a.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10614395_10152780990980956_5732379770402547396_n.jpg?oh=c3fa1acd959ffde22816147e7b142524&oe=555DD9E4"
 disqus_shortname: "ThuyDg"
 copyright_year: "2015"
@@ -13,3 +13,4 @@ twitter: "diotobuyt"
 github: "thuydg"
 facebook: "thuydg"
 linkined_url: "https://www.linkedin.com/in/thuydg"
+comments: true
