@@ -2,7 +2,7 @@
 layout: blog
 title: Web Frontend module management
 category: blog
-tags: [js] 
+tags: [js]
 summary: JavaScript モジュール管理について
 image: /images/blog/web-frontend-module.jpg
 ---
@@ -27,12 +27,24 @@ image: /images/blog/web-frontend-module.jpg
 
 # パッケージマネージャによる環境の準備
 
-* パッケージマネージャPackage managerの準備 
+* パッケージマネージャPackage managerの準備
   - Package managerとは：ソフトウェアのインストールやアップデート、バージョン管理を行っているソフトウェアです。
 
 ## npm - Node.jsのパッケージマネージャ
 
 * npmとはNode.jsのパッケージマネージャ
-  - Node.jsとはNode.jsはサーバー側で動作するJavaScriptであり、Web業界ではかなり注目されています。大量の処理に対応するために、ノンブロッキングI/Oというモデルを採用しています。
-  
+  - Node.jsとはNode.jsはサーバー側で動作するJavaScriptであり、
+  大量の処理に対応するために、ノンブロッキングI/Oというモデルを採用しています。
+  - 特徴：event driven, non-blocking I/O
 
+
+# Keywords to remember
+
+* モジュール：モジュールシステムの概要に参考
+* Node.js：
+* Common.jsのデザイン:
+
+# 参考リソース：
+
+* Node.js:
+http://gihyo.jp/dev/serial/01/nodejs/0001
