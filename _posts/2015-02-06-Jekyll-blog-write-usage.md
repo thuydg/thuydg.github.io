@@ -28,16 +28,17 @@ Here is some good summarize.
 
 * Table
 
+{% highlight bash %}
 
-    | Left align | Right align | Center align |
-    |:-----------|------------:|:------------:|
-    | This       |        This |     This     |
-    | column     |      column |    column    |
-    | will       |        will |     will     |
-    | be         |          be |      be      |
-    | left       |       right |    center    |
-    | aligned    |     aligned |   aligned    |
-
+     | Left align | Right align | Center align |
+     |:-----------|------------:|:------------:|
+     | This       |        This |     This     |
+     | column     |      column |    column    |
+     | will       |        will |     will     |
+     | be         |          be |      be      |
+     | left       |       right |    center    |
+     | aligned    |     aligned |   aligned    |
+{% endhighlight %}
 
 * バックスラッシュ[\]をMarkdownの前に挿入することで、Markdownをエスケープ(無効化)することができます。
 
@@ -49,15 +50,10 @@ Here is some good summarize.
 
 Jekyll also has built-in support for syntax highlighting of code snippets using either Pygments or Rouge, and including a code snippet in any post is easy. Just use the dedicated Liquid tag as follows:
 
-{% highlight ruby %}
-    def show
-      @widget = Widget(params[:id])
-      respond_to do |format|
-        format.html # show.html.erb
-        format.json { render json: @widget }
-      end
-    end
-{% endhighlight %}
+        {% highlight ruby %}
+          ...
+        {% endhighlight %}
+
 
 Result:
 
@@ -74,6 +70,14 @@ end
 * For line number:
 You can make code snippets include line-numbers by adding the word linenos to the end of the opening highlight tag like this:  [highlight ruby linenos].
 
+# Markdown live view
+
+* [Realtime markdown live preview](http://markdownlivepreview.com/)
+
+# Languages list could be use with Highlight
+
+* Pygments type: Python syntax highlight
+* [Languages list](http://pygments.org/languages/)
 
 ## References
 

@@ -17,7 +17,3 @@ image: https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG8c5Dt2ZFsgu0dQzdS
 
 
 # Reference
-
-
-
-(Src: Web+DBPressから)

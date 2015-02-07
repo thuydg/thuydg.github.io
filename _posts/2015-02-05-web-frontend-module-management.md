@@ -36,7 +36,64 @@ image: /images/blog/web-frontend-module.jpg
   - Node.jsとはNode.jsはサーバー側で動作するJavaScriptであり、
   大量の処理に対応するために、ノンブロッキングI/Oというモデルを採用しています。
   - 特徴：event driven, non-blocking I/O
+* npmの基本使い方
 
+{% highlight JavaScript %}
+
+$npm install browserify
+$npm install browserify@6.1.0 //version based
+$npm install -g browserify //global install
+$npm uninstall browserify
+$npm uninstall -g browserify
+
+{% endhighlight %}
+
+* package.json
+  - Node.jsの環境設定ファイル
+  - Node.jsのプロダクトのバージョンやパッケージ依存関係を管理するもの
+  - npm initで対話的に作成可能
+  - JSON形式で設定項目が書かれている
+  - 依存パッケージ：depedencies（プロダクトを実行において依存）, devDepedencies（実行に依存せず、開発時に利用）
+  - [自動的に説明してくれるAutomatic package.json](http://browsenpm.org/package.json)
+
+{% highlight JavaScript %}
+{
+  "name": "module-name",
+  "version": "10.3.1",
+  "description": "An example module to illustrate the usage of a package.json",
+  "author": "Your Name <you.name@example.org>",
+  "contributors": [{
+    "name": "Foo Bar",
+    "email": "foo.bar@example.com"
+  }],
+  "dependencies": {
+    "primus": "*",
+    "async": "~0.8.0",
+    "express": "4.2.x",
+    "winston": "git://github.com/flatiron/winston#master",
+    "bigpipe": "bigpipe/pagelet",
+    "plates": "https://github.com/flatiron/plates/tarball/master"
+  },
+  "devDependencies": {
+    "vows": "^0.7.0",
+    "assume": "<1.0.0 || >=2.3.1 <2.4.5 || >=2.5.2 <3.0.0",
+    "pre-commit": "*"
+  },
+  "license": "MIT"
+}
+{% endhighlight %}
+
+  - 以下のようにnpmをinstallする時に自動的に追加可能
+
+  {% highlight JavaScript %}
+  $npm install --save browserify
+  $npm install --save-dev browserify
+  {% endhighlight %}
+
+## Bower - Frontend package management
+
+Node.jsはパッケージだけではなく、jQueryやUnderscore.jsなどもパッケージとして管理したい。
+フロントエンド向けパッケージ管理マネージャであるBowerを利用。
 
 # Keywords to remember
 
@@ -46,5 +103,4 @@ image: /images/blog/web-frontend-module.jpg
 
 # 参考リソース：
 
-* Node.js:
-http://gihyo.jp/dev/serial/01/nodejs/0001
+* [Node.jsの基本](http://gihyo.jp/dev/serial/01/nodejs/0001)
