@@ -1,8 +1,8 @@
 ---
 layout: blog
 title: Atom using memo
-category: technology
-tags: [blog]
+category: blog
+tags: [atom, editor]
 summary: atom editor using and useful memo
 image: http://og.github.com/atom-mark/atom-mark@1200x630.png
 ---
@@ -10,6 +10,7 @@ image: http://og.github.com/atom-mark/atom-mark@1200x630.png
 # What is Atom?
 
 Github text editor and more.
+
 > A tool you can customize to do anything, but also use productively on the first day without ever touching a config file. Atom is modern, approachable, and hackable to the core.
 
 # How to use Atom usefully
@@ -27,6 +28,8 @@ When you install Atom, it comes with two command line utilities, atom and apm. T
     - ctrl-shift-G to open a site
     - Use Atom's menu Packages > Web View > Go to page
 
+* Markdown preview
+  - Menu Packages -> Markdown Preview
 
 # References
 

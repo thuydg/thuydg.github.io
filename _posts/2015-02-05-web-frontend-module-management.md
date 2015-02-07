@@ -9,7 +9,7 @@ image: /images/blog/web-frontend-module.jpg
 
 (Src: Web+DBPressから)
 
-# モジュールシステムの必要性：
+# 1. モジュールシステムの必要性：
 
 * モジュールシステムとは：
   - ある機能を持ったコードをモジュールとして定義し、ほかのモジュールがそれを呼び出せる仕組みを提供するシステム
@@ -25,12 +25,12 @@ image: /images/blog/web-frontend-module.jpg
   - JavaScriptのNode.js野場合、CommonJSスタイルのrequireやmodule, exportsという仕組みがあります。
   - ブラウザでも、モジュール管理システムを利用して、管理することは可能。
 
-# パッケージマネージャによる環境の準備
+# 2. パッケージマネージャによる環境の準備
 
 * パッケージマネージャPackage managerの準備
   - Package managerとは：ソフトウェアのインストールやアップデート、バージョン管理を行っているソフトウェアです。
 
-## npm - Node.jsのパッケージマネージャ
+## 2.1. npm - Node.jsのパッケージマネージャ
 
 * npmとはNode.jsのパッケージマネージャ
   - Node.jsとはNode.jsはサーバー側で動作するJavaScriptであり、
@@ -90,10 +90,31 @@ $npm uninstall -g browserify
   $npm install --save-dev browserify
   {% endhighlight %}
 
-## Bower - Frontend package management
+## 2.2. Bower - Frontend package management
 
 Node.jsはパッケージだけではなく、jQueryやUnderscore.jsなどもパッケージとして管理したい。
 フロントエンド向けパッケージ管理マネージャであるBowerを利用。
+
+* 基本使い方：
+  - コマンドラインでインストール、アンインストール。ただし、グロバールはありません！
+  - 通常、current directoryにinstallされる。
+
+{% highlight JavaScript %}
+$ bower install jquery
+$ bower uninstall jquery
+{% endhighlight %}
+
+* bower.json
+
+  - npmのpackage.jsonと同じ位置づけ。
+  - bower initと依存関係があります。
+
+# 3. Browserifyによるモジュール管理
+
+## 3.1. Browserifyの特徴：
+
+### CommonJS style module can be used in browser
+
 
 # Keywords to remember
 
