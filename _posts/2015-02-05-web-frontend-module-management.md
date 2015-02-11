@@ -115,13 +115,50 @@ $ bower uninstall jquery
 
 ### CommonJS style module can be used in browser
 
+* Node.jsではrequire()で、モジュールがロードする
+* CommonJS: browserやNode.jsといった実行環境に依存しない、JavaScriptの横断的な標準仕様
+* ブラウザーのJavaScriptエンジンはrequire()が存在しないため、BrowserifyはCommonJSスタイルのモジュール管理をブラウザーで利用できる
+
+### npmや組み込みのモジュールそのまま利用可能
+
+* Nodejs依存しない処理は使えません
+* FS/fds:require(fs) :NG
+
+## 3.2. Browserifyを使ったビルド:
+
+* require()でのパス解決は事前にビルドプロセスにて実行
+* Browserが実行されるファイルはBrowserifyを使って、ビルドされたものである。
+
+### Browserifyのインストール
+
+      npm install -g browserify
+
+{% highlight JavaScript %}
+    //module.js
+    module.exports = function() {
+      console.log("Hellow");
+    }
+{% endhighlight %}
+
+{% highlight JavaScript %}
+    //index.js
+    var module = require('./module');
+    module();
+{% endhighlight %}
+
+### 依存関係の定義
+
+     browserify index.js > bundle.js
 
 # Keywords to remember
 
 * モジュール：モジュールシステムの概要に参考
-* Node.js：
-* Common.jsのデザイン:
+* Node.js ：
+* CommonJS:JavaScriptにおけるモジュールシステムの標準的な概念
+
 
 # 参考リソース：
 
 * [Node.jsの基本](http://gihyo.jp/dev/serial/01/nodejs/0001)
+* [CommonJS](http://www.commonjs.org/)
+* []()
