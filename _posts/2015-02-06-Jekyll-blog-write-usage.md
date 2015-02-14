@@ -29,7 +29,7 @@ Here is some good summarize.
 * Table
 
 {% highlight bash %}
-
+  
      | Left align | Right align | Center align |
      |:-----------|------------:|:------------:|
      | This       |        This |     This     |
@@ -52,8 +52,11 @@ Jekyll also has built-in support for syntax highlighting of code snippets using 
 
         {% highlight ruby %}
           ...
+          or
+          ```
         {% endhighlight %}
 
+※｀｀｀を書けるために、_config.ymlに「markdown: redcarpet」が必要！＜Thanks 大川 for tip＞
 
 Result:
 

@@ -9,7 +9,7 @@ image: http://www.leadinge.co.jp/common/img/androids.gif
 
 # How to check if the activity is runned when install only?
 
-{% highlight xml %}
+{% highlight Java %}
     //Check first time run
     final String PREFS_NAME = "MyPrefsFile";
     SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
