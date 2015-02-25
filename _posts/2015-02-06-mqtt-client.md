@@ -38,7 +38,40 @@ ActiveMQ ApolloはMQTTTの他STOMPやAMQPなどもできます。
 また、クローズドソースですが、HiveMQというものもあります。
 
 * 作ろうとしているのはiOSクライアントなので、以下のように検討：
+** MQTTKit: https://github.com/jmesnil/MQTTKit
+*** Example: https://github.com/jmesnil/MQTTExample
 
+## POD INSTALL
+
+     $sudo gem install cocoapods
+     $pod install
+
+### Memo:
+Got this error:
+```
+$ pod install
+Analyzing dependencies
+/Library/Ruby/Gems/2.0.0/gems/cocoapods-0.35.0/lib/cocoapods/user_interface/error_report.rb:103: warning: Insecure world writable dir /usr in PATH, mode 040777
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/pathname.rb:422:in `open': No such file or directory - /Users/username***/.cocoapods/repos (Errno::ENOENT)
+  from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/pathname.rb:422:in `foreach'
+  from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/pathname.rb:422:in `children'
+  from /Library/Ruby/Gems/2.0.0/gems/cocoapods-0.35.0/lib/cocoapods/sources_manager.rb:63:in `all'
+  from /Library/Ruby/Gems/2.0.0/gems/cocoapods-0.35.0/lib/cocoapods/user_interface/error_report.rb:130:in `repo_information'
+  from /Library/Ruby/Gems/2.0.0/gems/cocoapods-0.35.0/lib/cocoapods/user_interface/error_report.rb:34:in `report'
+  from /Library/Ruby/Gems/2.0.0/gems/cocoapods-0.35.0/lib/cocoapods/command.rb:58:in `report_error'
+  from /Library/Ruby/Gems/2.0.0/gems/claide-0.7.0/lib/claide/command.rb:300:in `handle_exception'
+  from /Library/Ruby/Gems/2.0.0/gems/claide-0.7.0/lib/claide/command.rb:274:in `rescue in run'
+  from /Library/Ruby/Gems/2.0.0/gems/claide-0.7.0/lib/claide/command.rb:264:in `run'
+  from /Library/Ruby/Gems/2.0.0/gems/cocoapods-0.35.0/lib/cocoapods/command.rb:45:in `run'
+  from /Library/Ruby/Gems/2.0.0/gems/cocoapods-0.35.0/bin/pod:43:in `<top (required)>'
+
+```
+Solution:
+
+```
+pod setup
+pod install
+```
 
 # Reference
 
