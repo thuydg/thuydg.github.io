@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Git study 1
+title: Git study
 category: blog
 tags: [git]  
 summary: Git study memo
@@ -20,3 +20,27 @@ Source: http://d.hatena.ne.jp/mrgoofy33/20100910/1284069468
 > 「git reset –soft」 → ワークディレクトリの内容はそのままでコミットだけを取り消す。
 
 > 「git reset –hard」 → コミット取り消した上でワークディレクトリの内容も書き換える。
+
+# Git branch
+
+* ブランチをみる
+
+```
+git branch
+```
+
+* ブランチを作成したい
+
+```
+git branch ＜ブランチ名＞
+```
+
+* git 切り替え
+
+```
+git checkout <ブランチ>
+```
+
+# Reference
+
+* [サルでもわかるGit](http://www.backlog.jp/git-guide/reference/branch.html)
