@@ -41,6 +41,18 @@ git branch ＜ブランチ名＞
 git checkout <ブランチ>
 ```
 
+# Git remote
+
+     git remote add origin ...
+     git remote rm origin
+
+# Git管理
+
+* Branch
+* Tag
+
+
 # Reference
 
 * [サルでもわかるGit](http://www.backlog.jp/git-guide/reference/branch.html)
+* [Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
