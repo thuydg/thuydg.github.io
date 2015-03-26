@@ -12,8 +12,6 @@ image: http://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Docker_%28contai
 > Docker（ドッカー）はソフトウェアコンテナ内のアプリケーションのデプロイメントを自動化する
 オープンソースソフトウェアである。<src:Wikipedia>
 
-
-
 # Famous service
 
 # Tutum

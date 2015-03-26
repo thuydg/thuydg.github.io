@@ -128,10 +128,60 @@ expect(beverages).to.have.property('tea').with.length(3);
 * Configを管理するためのモジュール
 * Usage
   - Configurations file create: stored in ./config folder
-  -
+
+```
+$ npm install config
+$ mkdir config
+$ vi config/default.json
+
+{
+  // Customer module configs
+  "Customer": {
+    "dbConfig": {
+      "host": "localhost",
+      "port": 5984,
+      "dbName": "customers"
+    },
+    "credit": {
+      "initialLimit": 100,
+      // Set low for development
+      "initialDays": 1
+    }
+  }
+}
+```
+
+How to get data from it
+
+```
+var config = require('config');
+...
+var dbConfig = config.get('Customer.dbConfig');
+db.connect(dbConfig, ...);
+
+if (config.has('optionalFeature.detail')) {
+  var detail = config.get('optionalFeature.detail');
+  ...
+}
+```
+
+# Request
+
+*
+* Usage
+```
+var request = require('request');
+request('http://www.google.com', function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    console.log(body) // Show the HTML for the Google homepage.
+  }
+})
+```
 
 # Reference
 
 * [SuperAgent](https://github.com/visionmedia/superagent)
 * [Bluebird](https://github.com/petkaantonov/bluebird)
 * [nodejs and promise](http://blog.otakumode.com/2014/09/17/nodejs-promise/)
+* [request](https://www.npmjs.com/package/request)
+* [config](https://www.npmjs.com/package/config)

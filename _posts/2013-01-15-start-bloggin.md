@@ -51,6 +51,27 @@ git checkout <ブランチ>
 * Branch
 * Tag
 
+# Git config
+
+* How to check
+
+```
+$ git config --list
+user.name=Scott Chacon
+user.email=schacon@gmail.com
+color.status=auto
+color.branch=auto
+color.interactive=auto
+color.diff=auto
+...
+```
+
+* How to change
+
+```
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
 
 # Reference
 
