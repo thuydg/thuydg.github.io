@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: sublime
+title: Unity C# 勉強会参加したメモ
 category: blog
 tags: [unity, csharp]
 summary: Android-Unity-bu 勉強会 memo

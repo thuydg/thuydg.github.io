@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: sublime
+title: Maintainable Javascript第３章を読んだメモ
 category: blog
 tags: [javascript, maintainable]
 summary: how I applied what I learnt from maintable Javascript
