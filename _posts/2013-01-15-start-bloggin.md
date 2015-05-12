@@ -73,6 +73,30 @@ $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
 
+# Git commit delete
+
+* revert
+* cherry-pick
+
+# git global setting ~/.gitignore
+
+* HOME directoryに追加するための~/.gitignoreを作成,そして登録する
+     $ git config --global core.excludesfile ~/.gitignore
+* いつ使うかというと、MAC専用のファイル（*.DS_Storeを設定できる）
+
+# How to rename branch on both local and remote
+
+The closest thing to renaming is deleting and then re-creating on the remote. For example:
+
+```
+git branch -m master master-old
+git push remote :master         # delete master
+git push remote master-old      # create master-old on remote
+
+git checkout -b master some-ref # create a new local master
+git push remote master          # create master on remote
+```
+
 # Reference
 
 * [サルでもわかるGit](http://www.backlog.jp/git-guide/reference/branch.html)

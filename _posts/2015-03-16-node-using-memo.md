@@ -103,14 +103,14 @@ request.post('/user')
 A().then(B).then(C).then(done);  // ABC
 ```
 
-* Bluebirdの使い方（APIドキュメント）：https://github.com/petkaantonov/bluebird/blob/master/API.md
+ * Bluebirdの使い方（APIドキュメント）：https://github.com/petkaantonov/bluebird/blob/master/API.md
 
 
 # Chai
 
-* Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
-* The assert style is exposed through assert interface.
-* How to use: [link](http://chaijs.com/guide/styles/)
+ * Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
+ * The assert style is exposed through assert interface.
+ * How to use: [link](http://chaijs.com/guide/styles/)
 
 ```
 var expect = require('chai').expect
@@ -125,8 +125,8 @@ expect(beverages).to.have.property('tea').with.length(3);
 
 # Config
 
-* Configを管理するためのモジュール
-* Usage
+ * Configを管理するためのモジュール
+ * Usage
   - Configurations file create: stored in ./config folder
 
 ```
@@ -165,10 +165,14 @@ if (config.has('optionalFeature.detail')) {
 }
 ```
 
+ * config fileを分けて、場合によって、利用する設定ファイルが違う：
+  - npm testテスト環境で利用するconfig: test.json
+
+
 # Request
 
-*
-* Usage
+ * Usage
+
 ```
 var request = require('request');
 request('http://www.google.com', function (error, response, body) {
@@ -180,8 +184,8 @@ request('http://www.google.com', function (error, response, body) {
 
 # Reference
 
-* [SuperAgent](https://github.com/visionmedia/superagent)
-* [Bluebird](https://github.com/petkaantonov/bluebird)
-* [nodejs and promise](http://blog.otakumode.com/2014/09/17/nodejs-promise/)
-* [request](https://www.npmjs.com/package/request)
-* [config](https://www.npmjs.com/package/config)
+ * [SuperAgent](https://github.com/visionmedia/superagent)
+ * [Bluebird](https://github.com/petkaantonov/bluebird)
+ * [nodejs and promise](http://blog.otakumode.com/2014/09/17/nodejs-promise/)
+ * [request](https://www.npmjs.com/package/request)
+ * [config](https://www.npmjs.com/package/config)
