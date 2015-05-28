@@ -41,12 +41,16 @@ git branch ＜ブランチ名＞
 git checkout <ブランチ>
 ```
 
+* branch name change
+
+    git branch -m "new_name"
+
 # Git remote
 
      git remote add origin ...
      git remote rm origin
 
-# Git管理
+# Git管理, social coding
 
 * Branch
 * Tag
@@ -97,7 +101,17 @@ git checkout -b master some-ref # create a new local master
 git push remote master          # create master on remote
 ```
 
+# 一時的に作業を保存するために
+
+* Git stash 一時的に退避したい
+    git stash save
+* 退避した作業の一覧を表示したい
+    git stash list
+* 退避した作業を復元したい
+    git stash drop
+
 # Reference
 
 * [サルでもわかるGit](http://www.backlog.jp/git-guide/reference/branch.html)
 * [Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+* [Git stash](http://www.backlog.jp/git-guide/reference/stash.html)

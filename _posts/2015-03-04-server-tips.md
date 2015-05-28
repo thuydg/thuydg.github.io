@@ -34,6 +34,13 @@ RESULT:
 
 * to return to specific
 
+* search in directory
+
+     grep -rnw 'directory' -e "pattern"
+
+-r or -R is recursive, -n is line number and -w stands match the whole word. -l (letter L) can be added to have just the file name.
+
 # Reference
 
 * [ローカルでサーバーをたつため](http://qiita.com/higuma/items/b23ca9d96dac49999ab9)
+* [Search](http://stackoverflow.com/questions/16956810/finding-all-files-containing-a-text-string-on-linux)
