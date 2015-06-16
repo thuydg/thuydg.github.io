@@ -18,3 +18,17 @@ Normal one:
 　　  }else{
 　　　　  x = false;
 　　  }
+
+# map() function
+
+How to write?
+     arr.map(callback[, thisArg]);
+How to run?
+      var numbers = [1, 4, 9];
+      var roots = numbers.map(Math.sqrt);
+      // roots   の内容は [1, 2, 3] となる
+      // numbers の内容は [1, 4, 9] のまま
+
+# Reference
+
+* (Map javascript)[https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/map]

@@ -110,6 +110,26 @@ git push remote master          # create master on remote
 * 退避した作業を復元したい
     git stash drop
 
+# git add --patch
+
+git add -pした時のコマンド一覧
+
+    y - このハンクをステージングする
+    n - スキップする
+    q - 終了する
+    a - 以降のハンクをすべてステージングする
+    d - 以降のハンクをすべてスキップする
+    g - 指定したハンクへ移動
+    / - 正規表現によるハンクの検索
+    j - 未確定な前のハンクへ移動する
+    J - 前のハンクへ移動する
+    k - 未確定な次のハンクへ移動する
+    K - ハンクへ移動する
+    s - ハンクを分割する
+    e - 手動で現在のハンクを修正する
+    ? - ヘルプを表示する
+
+
 # Reference
 
 * [サルでもわかるGit](http://www.backlog.jp/git-guide/reference/branch.html)
